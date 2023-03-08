@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Jelena</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__items">
+          <nav>
+            <ul id="sidemenu">
+              <li class="fa fa-times" onclick="closeMenu()"></li>
+              <li><a href="#"><i class="fa fa-star-o"></i></a></li>
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#get-in-touch">Get in touch</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+          </nav>
+        </div>
+      </header>
+      <div class="home">
+        <div class="home__title">
+          <h1>Jelena Stojanovic</h1>
+          <p>Front-End Developer</p>
+        </div>
+      </div>
+    </div>
+    <section id="about-me">
+      <div class="about__container">
+        <div class="about__description">
+          <p>
+            As a Frontend Developer, I am responsible for creating and
+            implementing visually appealing and user-friendly interfaces for
+            websites and web applications. I work closely with the UX/UI design
+            team to ensure that the designs are functional and meet the user's
+            needs. I am also responsible for optimizing the website for maximum
+            speed and scalability, as well as ensuring cross-browser
+            compatibility.
+          </p>
+          <div class="about__tabs">
+            <p class="about__tab_link active_link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="about__tab_link" onclick="openTab('experience')">
+              Experience
+            </p>
+            <p class="about__tab_link" onclick="openTab('education')">
+              Education
+            </p>
+          </div>
+          <div class="about__tabs_content active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span></li>
+            </ul>
+          </div>
+          <div class="about__tabs_content" id="experience">
+            <ul>
+              <li><span>Front-End Developer, Sep 2022. - Present</span></li>
+              <li><span>Web Developer, Mar 2021. - Sep 2022.</span></li>
+            </ul>
+          </div>
+          <div class="about__tabs_content" id="education">
+            <ul>
+              <li>
+                <span
+                  >BSc in Electrical and Computer Engineering, 2016. -
+                  2021.</span
+                >
+              </li>
+              <li>
+                <span
+                  >MSc in Electrical and Computer Engineering, 2021. -
+                  Present</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about__image">
+          <img src="images/port_img.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects__container">
+        <!-- <h2>My Work</h2> -->
+        <div class="projects__works">
+          <div class="project__work">
+            <img src="images/ticket.jpg" alt="" />
+            <div class="project__work_description">
+              <h3>Cinemate App</h3>
+              <a href="https://cinemate-c.netlify.app/" target="_blank"
+                ><i class="fa fa-external-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__work">
+            <img src="images/shopping.jpg" alt="" />
+            <div class="project__work_description">
+              <h3>Shopping Cart App</h3>
+              <a href="https://shopping-cart-sc.netlify.app/" target="_blank"
+                ><i class="fa fa-external-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project__work">
+            <img src="images/ebook.jpg" alt="" />
+            <div class="project__work_description">
+              <h3>E-Book App</h3>
+              <a href="#" target="_blank"
+                ><i class="fa fa-external-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="get-in-touch">
+      <div class="contact__container">
+        <form
+          action="mailto:stojanovicj97@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h3>Get in</h3>
+          <h3>Touch</h3>
+          <p><i class="fa fa-paper-plane"></i>stojanovicj97@gmail.com</p>
+          <div class="social__icons">
+            <a
+              href="https://www.facebook.com/profile.php?id=100008821454948"
+              class="social__icons_link"
+              target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jelena-stojanovic88/"
+              class="social__icons_link"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/jelenajelena11"
+              class="social__icons_link"
+              target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/____jelena1/"
+              class="social__icons_link"
+              target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
+          <!-- <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea> -->
+
+          <button type="submit">Send an email</button>
+          <!-- <a href="" class="contact__cv">Download a CV</a> -->
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
