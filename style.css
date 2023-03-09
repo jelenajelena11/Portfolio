@@ -466,4 +466,28 @@ nav .fa-bars {
   .about__container {
     flex-direction: column-reverse;
   }
+
+  .home__title {
+    text-align: center;
+  }
+
+  .home__title p {
+    margin: 20px auto;
+  }
+
+  .project__work {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 416px) and (min-width: 376px) {
+  .about__image img {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .contact__container form {
+    padding: 0 1rem;
+  }
 }
